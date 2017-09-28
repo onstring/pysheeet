@@ -219,7 +219,7 @@ Match common username or password
 
     >>> re.match('^[a-zA-Z0-9-_]{3,16}$', 'Foo') is not None
     True
-    >>> re.match('^\w|[-_]{3,16}$', 'Foo') is not None
+    >>> re.match('^\w|[-]{3,16}$', 'Foo') is not None
     True
 
 Match hex color value
@@ -229,7 +229,7 @@ Match hex color value
 
     >>> re.match('^#?([a-f0-9]{6}|[a-f0-9]{3})$', '#ffffff')
     <_sre.SRE_Match object at 0x10886f6c0>
-    >>> re.match('^#?([a-f0-9]{6}|[a-f0-9]{3})$', '#fffffh')
+    >>> re.match('^#?([a-f0-9]{6}|[a-f0-9]{3})$', '#fff')
     <_sre.SRE_Match object at 0x10886f288>
 
 
